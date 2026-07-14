@@ -1,10 +1,7 @@
 // ══════════════════════════════════════════
 //  SKILLIU — Conexão com o Supabase
-//  Preencha com os dados do SEU projeto (Project Settings > API no Supabase).
-//  SUPABASE_URL   -> campo "Project URL"
-//  SUPABASE_ANON_KEY -> campo "anon public" (NUNCA use a "service_role" aqui, ela é secreta)
 // ══════════════════════════════════════════
-const SUPABASE_URL = 'COLOQUE_AQUI_A_URL_DO_SEU_PROJETO';
-const SUPABASE_ANON_KEY = 'COLOQUE_AQUI_A_CHAVE_ANON_PUBLIC';
+const SUPABASE_URL = 'https://piwlsguevxwahrsnnfop.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBpd2xzZ3Vldnh3YWhyc25uZm9wIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM5ODEwMjEsImV4cCI6MjA5OTU1NzAyMX0.YGVeNhiDy1uNGv2gcGUL83NnrD9GbrIQ78YC0molSPQ';
 
 const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
