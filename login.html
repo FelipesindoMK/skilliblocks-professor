@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skilliu — Login do Painel</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Urbanist:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="login.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="login-shell">
+  <div class="login-box">
+    <div class="login-logo">
+      <div class="login-logo-badge">S</div>
+      <div class="login-logo-text"><b>Skilliu</b><span>Painel de Gestão</span></div>
+    </div>
+
+    <h1 id="loginTitulo">Entrar</h1>
+    <p class="login-sub" id="loginSub">Acesso restrito à direção e coordenação Skilliu.</p>
+
+    <div class="login-erro" id="loginErro"></div>
+
+    <form id="formLogin">
+      <div class="login-grupo">
+        <label>E-mail</label>
+        <input type="email" id="loginEmail" placeholder="voce@skilliu.com.br" required autocomplete="username">
+      </div>
+      <div class="login-grupo">
+        <label>Senha</label>
+        <div class="senha-wrap">
+          <input type="password" id="loginSenha" placeholder="••••••••" required autocomplete="current-password">
+          <button type="button" class="senha-olho" id="senhaOlho" aria-label="Mostrar senha"><i class="fa-solid fa-eye"></i></button>
+        </div>
+      </div>
+      <button type="submit" class="login-btn" id="loginBtn">
+        <span id="loginBtnTexto">Entrar</span>
+        <i class="fa-solid fa-spinner fa-spin" id="loginSpinner" style="display:none;"></i>
+      </button>
+    </form>
+
+    <a href="#" class="login-esqueci" id="linkEsqueci">Esqueci minha senha</a>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="supabase-config.js"></script>
+<script src="login.js"></script>
+</body>
+</html>
